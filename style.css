@@ -20,12 +20,11 @@ html, body {
 }
 
 #content {
-    max-width: 100%; /* Ensure content doesn't exceed viewport width */
-    margin: 0 auto; /* Center content if needed */
-    padding: 20px; /* Add padding if needed */
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
 }
 
-/* Responsive design example */
 @media (max-width: 768px) {
     #content {
         padding: 10px;
@@ -744,7 +743,7 @@ h1 {
     background-color: #fff;
     padding: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, background-color 0.2s; /* Transition for transform and background-color */
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .image-container:hover .product-icons {
