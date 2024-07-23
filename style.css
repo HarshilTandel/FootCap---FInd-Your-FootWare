@@ -12,9 +12,24 @@
     --font-secondary: 'Roboto, sans-serif';
     --font-highlight: 'Josefin Sans, sans-serif';
 }
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+}
+
+#content {
+    max-width: 100%; /* Ensure content doesn't exceed viewport width */
+    margin: 0 auto; /* Center content if needed */
+    padding: 20px; /* Add padding if needed */
+}
+
+/* Responsive design example */
+@media (max-width: 768px) {
+    #content {
+        padding: 10px;
+    }
 }
 header {
     background-color: #ffffff;
@@ -1659,3 +1674,90 @@ h3:hover {
         padding: 8px;
     }
 }
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.discount {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff5a5f;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .navbar-logo img {
+        max-width: 120px;
+        margin-right: 10px;
+        position: relative;
+        left: 0;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero img {
+        object-fit: cover;
+    }
+
+    .highlight-text1 {
+        font-size: 32px;
+    }
+
+    .highlight-text2 {
+        font-size: 24px;
+    }
+
+    .descrption {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .shop-now button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .men-collection,
+    .women-collection,
+    .sports-collection {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .men-collection img,
+    .women-collection img,
+    .sports-collection img {
+        width: 100%;
+    }
+
+    .brand-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .brand-button {
+        width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .product-card {
+        margin: 0 auto;
+    }
+}
+
