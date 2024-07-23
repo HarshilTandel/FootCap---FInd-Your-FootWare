@@ -13,6 +13,7 @@
     --font-highlight: 'Josefin Sans, sans-serif';
 }
 html, body {
+    scroll-behavior: smooth;
     width: 100%;
     margin: 0;
     padding: 0;
